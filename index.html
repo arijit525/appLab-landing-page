@@ -20,8 +20,8 @@
                 <img src="./Assets/images/Logo.png" alt="Logo.png">
             </div>
 
-            <div id="sidebar" class="menu__lists">
-                <ul>
+            <div  class="menu__lists">
+                <ul id="sidebar">
                     <li>Home</li>
                     <li>Key Features</li>
                     <li>Pricing</li>
@@ -549,10 +549,10 @@
 	$(document).ready(function(){
 		$('#sidebar-btn').click(function(){
 			$('#sidebar').toggleClass('visible');
-            $('.content').toggleClass('visible');
+            $('.content').toggleClass('visible-content');
 		});
         $('.content').click(function(){
-			$('.content').toggleClass('visible');
+			$('.content').toggleClass('visible-content');
             $('#sidebar').toggleClass('visible');
 		});
 	});
