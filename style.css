@@ -574,20 +574,17 @@ table {
     opacity: 0.2;
 }
 
-.bars {
-    width: 30px;
+.visible {
+    transform: translateX(63%);
 }
 
-/* #sidebar.ul{
-	transition: right 0.3s linear;
-} */
-
-.visible {
+.visible-content {
     display: block!important;
 }
 
 .bars {
     display: none;
+    width: 30px;
 }
 
 .content {
@@ -716,10 +713,6 @@ table {
         max-width: 600px;
   }
 
-  .inner__header .menu__lists {
-    display: none;
-  }
-
   .bars {
     display: block;
 }
@@ -779,17 +772,18 @@ table {
 }
 
   header ul {
-    flex-direction: column;
+     flex-direction: column;
     background: #FFF;
     box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
     position: fixed;
     width: 15rem;
-    right: 0;
+    left: 0;
     top: 0;
+    transform: translateX(163%);
     height: 100vh;
     padding-top: 70px;
     z-index: 5;
-    transition: 1s linear;
+    transition: all 0.3s linear;
   }
 
   .invisible {
